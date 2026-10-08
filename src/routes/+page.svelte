@@ -11,6 +11,8 @@
   import X from 'lucide-svelte/icons/x';
   
   let isMenuOpen = $state(false);
+  
+  const waLink = "https://wa.me/6285779705274?text=Halo%20Procenter,%20saya%20tertarik%20dengan%20sistem%20IoT%20dashboard%20Anda.";
 </script>
 
 <svelte:head>
@@ -34,8 +36,8 @@
           <a href="#how-it-works" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Cara Kerja</a>
           <a href="#hardware" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Integrasi IoT</a>
           <div class="flex items-center gap-4">
-            <button class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Log in</button>
-            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm">Mulai Gratis</button>
+            <a href="/login" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Log in</a>
+            <a href="/register" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm inline-block">Mulai Gratis</a>
           </div>
         </nav>
 
@@ -57,8 +59,8 @@
         <a href="#how-it-works" class="block text-sm font-medium text-slate-600" onclick={() => isMenuOpen = false}>Cara Kerja</a>
         <a href="#hardware" class="block text-sm font-medium text-slate-600" onclick={() => isMenuOpen = false}>Integrasi IoT</a>
         <div class="pt-4 flex flex-col gap-3 border-t border-slate-100">
-          <button class="w-full text-center py-2 text-sm font-medium text-slate-600 border border-slate-200 rounded-lg">Log in</button>
-          <button class="w-full text-center py-2 bg-blue-600 text-white rounded-lg text-sm font-medium">Mulai Gratis</button>
+          <a href="/login" class="w-full text-center py-2 text-sm font-medium text-slate-600 border border-slate-200 rounded-lg inline-block">Log in</a>
+          <a href="/register" class="w-full text-center py-2 bg-blue-600 text-white rounded-lg text-sm font-medium inline-block">Mulai Gratis</a>
         </div>
       </div>
     {/if}
@@ -79,13 +81,13 @@
           Dashboard terpusat untuk memantau dan mengelola infrastruktur keamanan fisik Anda. Terintegrasi langsung dengan mikrokontroler ESP32, pembaca QR, dan magnetic lock.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <button class="inline-flex justify-center items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
+          <a href={waLink} target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
             Coba Demo Dashboard
             <ArrowRight class="w-4 h-4" />
-          </button>
-          <button class="inline-flex justify-center items-center gap-2 bg-white text-slate-700 border border-slate-200 px-6 py-3 rounded-xl font-medium hover:bg-slate-50 transition-all">
+          </a>
+          <a href={waLink} target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 bg-white text-slate-700 border border-slate-200 px-6 py-3 rounded-xl font-medium hover:bg-slate-50 transition-all">
             Pelajari Dokumentasi API
-          </button>
+          </a>
         </div>
         <div class="flex items-center gap-6 pt-4 text-sm text-slate-500 font-medium">
           <div class="flex items-center gap-2"><CheckCircle2 class="w-4 h-4 text-emerald-500"/> No credit card required</div>
@@ -222,12 +224,12 @@
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Siap Mengamankan Gedung Anda?</h2>
       <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">Mulai gunakan Procenter hari ini dan rasakan kemudahan mengelola ribuan titik akses dari satu layar.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-xl">
+        <a href="/register" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-xl inline-block">
           Daftar Gratis Sekarang
-        </button>
-        <button class="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-colors border border-blue-500">
+        </a>
+        <a href={waLink} target="_blank" rel="noopener noreferrer" class="bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-colors border border-blue-500 inline-block">
           Hubungi Sales
-        </button>
+        </a>
       </div>
     </div>
   </section>
