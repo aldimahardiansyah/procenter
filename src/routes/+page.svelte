@@ -9,6 +9,7 @@
   import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
   import Menu from 'lucide-svelte/icons/menu';
   import X from 'lucide-svelte/icons/x';
+  import Brain from 'lucide-svelte/icons/brain';
   
   let isMenuOpen = $state(false);
   
@@ -166,6 +167,63 @@
           </div>
           <h3 class="text-xl font-bold text-slate-900 mb-3">Keamanan Enterprise</h3>
           <p class="text-slate-600">Enkripsi end-to-end dari device ke cloud. Log audit komprehensif untuk memenuhi standar kepatuhan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Security Section -->
+  <section class="py-20 bg-gradient-to-b from-white to-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-blue-600 rounded-3xl overflow-hidden shadow-2xl relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="grid lg:grid-cols-2 gap-8 items-center relative z-10 p-8 lg:p-12">
+          <div class="space-y-6 text-white">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/30 border border-blue-400 text-blue-50 text-sm font-medium">
+              <Brain class="w-4 h-4" />
+              Procenter AI Security
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-bold leading-tight">
+              Keamanan Cerdas yang Bisa Membaca Situasi.
+            </h2>
+            <p class="text-blue-100 text-lg leading-relaxed">
+              Sistem kami terintegrasi dengan AI mutakhir untuk menganalisis miliaran log akses secara real-time. Procenter mendeteksi anomali seperti percobaan masuk paksa di luar jam kerja dan mencegah risiko sebelum terjadi.
+            </p>
+            <div class="bg-blue-700/50 backdrop-blur rounded-xl p-5 border border-blue-500/30">
+              <h4 class="font-semibold text-white mb-2 flex items-center gap-2">
+                <CheckCircle2 class="w-5 h-5 text-cyan-300" /> Ringkasan Keamanan Harian
+              </h4>
+              <p class="text-blue-100 text-sm">
+                Setiap pagi, manajer keamanan menerima ringkasan otomatis yang ditulis menggunakan bahasa alami (Natural Language), merangkum insight penting tanpa perlu repot membaca log satu per satu.
+              </p>
+            </div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800/20 bg-slate-900">
+            <div class="bg-slate-800 px-4 py-2 border-b border-slate-700/50 flex gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div class="p-6 text-sm font-mono text-slate-300 space-y-4">
+              <div class="flex gap-4">
+                <span class="text-cyan-400">10:45:01</span>
+                <span>Analisis AI <span class="text-slate-500">→</span> <span class="text-emerald-400">Normal</span> (Akses Utama)</span>
+              </div>
+              <div class="flex gap-4">
+                <span class="text-cyan-400">23:14:22</span>
+                <span>Analisis AI <span class="text-slate-500">→</span> <span class="text-rose-400">ANOMALI TERDETEKSI</span></span>
+              </div>
+              <div class="bg-slate-800/80 p-3 rounded border border-rose-500/30 text-rose-200 mt-2">
+                <span class="text-rose-400 font-bold">Peringatan:</span> Percobaan akses kartu tidak dikenal di Pintu Gudang B pada pukul 23:14 (Di luar jam operasional). Notifikasi telah dikirim ke tim sekuriti.
+              </div>
+              <div class="mt-4 pt-4 border-t border-slate-700/50">
+                <div class="text-indigo-300 font-bold mb-1">✨ Ringkasan Harian Manajer:</div>
+                <div class="text-slate-400 leading-relaxed italic">
+                  "Hari ini terdapat 1.240 akses normal dan 1 anomali di Pintu Gudang B pada malam hari. Area lainnya terpantau aman."
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
