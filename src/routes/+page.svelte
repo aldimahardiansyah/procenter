@@ -1,5 +1,14 @@
 <script lang="ts">
-  import { Shield, Smartphone, Lock, Cloud, Cpu, Activity, ArrowRight, CheckCircle2, Menu, X } from 'lucide-svelte';
+  import Shield from 'lucide-svelte/icons/shield';
+  import Smartphone from 'lucide-svelte/icons/smartphone';
+  import Lock from 'lucide-svelte/icons/lock';
+  import Cloud from 'lucide-svelte/icons/cloud';
+  import Cpu from 'lucide-svelte/icons/cpu';
+  import Activity from 'lucide-svelte/icons/activity';
+  import ArrowRight from 'lucide-svelte/icons/arrow-right';
+  import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
+  import Menu from 'lucide-svelte/icons/menu';
+  import X from 'lucide-svelte/icons/x';
   
   let isMenuOpen = $state(false);
 </script>
